@@ -15,8 +15,11 @@
 */
 
 //Code here
-
-
+var me = {
+  name:"Jason",
+  age:48
+}
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -25,8 +28,15 @@
   Have the values to those keys be your favorite thing in that category.
 */
 
-//Code here
-
+//Code here,
+var favoriteThings = {
+  band:"Pretty Maids",
+  food:"Navajo Taco's",
+  person:"Britty",
+  book:"The Name Of The Wind",
+  movie:"The Matrix",
+  holiday:"Christmas"
+}
 
 
 /*
@@ -34,7 +44,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "AMC Pacer";
+favoriteThings.brand = "Yenalgloshi";
 
 
 /*
@@ -42,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +68,10 @@
 */
 
 //Code here
-
+var backPack = {};
+var item = "firstPocket";
+backPack[item] = "chapstick";
+backPack.color = "black"
 
 
 /*
@@ -64,7 +79,7 @@
 */
 
 //Code here
-
+alert(Object.values(backPack));
 
 
 /*
@@ -74,6 +89,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack);
 
 
 
@@ -97,7 +113,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +126,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -118,6 +135,15 @@ var user2 = {
 */
 
 //Code Here
+methodCollection = {
+  alertHello:function(){
+    alert("hello");
+  },
+  
+  logHello:function(){
+      console.log("hello");
+    }
+  }
 
 
 
@@ -126,7 +152,8 @@ var user2 = {
 */
 
 //Code Here
-
+alertHello();
+logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +164,14 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  var obj = {
+    name:name,
+    birthday:birthday,
+    ssn:ssn
+  }
+  return obj;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +182,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  var object = {
+    cardNumber:cardNumber,
+    expirationDate:expirationDate,
+    securityCode:securityCode
+  }
+  return object;
+}
 
